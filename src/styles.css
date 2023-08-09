@@ -1,0 +1,107 @@
+.pokemonCard_type_grass{
+    background: rgb(194, 246, 194);
+}
+.pokemonCard_type_water{
+    background: rgb(191, 237, 255);
+}
+.pokemonCard_type_fire{
+    background: rgb(243, 214, 160);
+}
+.pokemonCard_type_bug{
+    background: rgb(170, 206, 161)
+}
+.pokemonCard_type_poison{
+    background: rgb(218, 169, 218);
+}
+.pokemonCard_type_electric{
+    background: rgb(255, 255, 126)
+}
+.pokemonCard_type_ground{
+    background: rgb(190, 202, 212)
+}
+.pokemonCard_type_fairy{
+    background: rgb(246, 166, 223)
+}
+.pokemonCard_type_normal{
+    background: #fff
+}
+
+.pokemonCard_type_grass_title{
+    color: rgb(194, 246, 194);
+}
+.pokemonCard_type_water_title{
+    color: rgb(191, 237, 255);
+}
+.pokemonCard_type_fire_title{
+    color: rgb(243, 214, 160);
+}
+.pokemonCard_type_bug_title{
+    color: rgb(170, 206, 161)
+}
+.pokemonCard_type_poison_title{
+    color: rgb(252, 175, 251);
+}
+.pokemonCard_type_electric_title{
+    color: rgb(255, 255, 126)
+}
+.pokemonCard_type_ground_title{
+    color: rgb(190, 202, 212)
+}
+.pokemonCard_type_fairy_title{
+    color: rgb(246, 166, 223)
+}
+.pokemonCard_type_normal_title{
+    color: #F0E78E
+}
+
+.pBar::-webkit-progress-value {
+    background-color: #93cbbc; /* Green color for the progress bar */
+    }
+
+
+
+@keyframes moveLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+@keyframes moveUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  .cardAnimate {
+    animation: drop-in 1200ms ease 500ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+  .screenCross {
+    animation: moveLeft 3s ease-in-out;
+  }
+
+  .model{
+    background: linear-gradient(to bottom, #F6F4EB, #8fabbe);    
+    animation: moveUp 1s ease-in-out;
+    top: 0;
+  }
+
+  .model::-webkit-scrollbar {
+    width: 0; /* Adjust the width of the custom scrollbar */
+  } 
